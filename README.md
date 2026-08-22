@@ -1,0 +1,2 @@
+# CodewithAwal
+A simple portfolio
