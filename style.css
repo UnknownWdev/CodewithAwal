@@ -396,6 +396,117 @@ h2 {
     flex-direction: column;
     gap: 1.5rem;
   }
+  /* ==========================================================================
+   PROJECTS SECTION & GRID
+   ========================================================================== */
+
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* The Grid Container */
+.projects-grid {
+  display: grid;
+  /* Automatically fits items, making columns at least 300px wide */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Project Card Structure */
+.project-card {
+  background: #ffffff; /* Change this to your preferred card color */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the footer to the very bottom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Animations */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Emoji Styling */
+.card-img {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-title-link {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card p {
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Footer Alignment */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Ensures it pins perfectly to the bottom regardless of text height */
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
+}
+
+/* Technology Tags */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Call to Action Text ("View Project ->") */
+.project-action-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0070f3; /* Customize to your primary accent color */
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .arrow {
+  transform: translateX(4px); /* Moves arrow slightly forward on card hover */
+}
+
 }
   .contact-container {
     grid-template-columns: 1fr;
